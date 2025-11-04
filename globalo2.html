@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Data</title>
+
+    <!-- Bootstrap core CSS -->
+   <link href="./bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+
+<body>
+<div class="navbar navbar-inverse">
+ <div class="container-fluid">
+  <div class="navbar-header">
+    <a class="navbar-brand" href="http://www.eas.gatech.edu">EAS@GT</a>
+  </div>
+  <div>
+    <ul class="nav navbar-nav">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="group.html">Group</a></li>
+    <li><a href="research.html">Research</a></li>
+    <li><a href="publications.html">Publications</a></li>
+    <li><a href="teaching.html">Teaching</a></li>
+    <li class="active"><a href="data.html">Data</a></li>
+    <!--<li><a href="apply.html">Apply</a></li> -->
+    </ul>
+  </div>
+ </div>
+</div>
+
+<style>
+     img {width: 200px; display: block; max height: 150px}
+</style>
+
+ <section class="container">
+    <!-- Example row of columns -->
+
+     <div class="container col">
+     <h2> Data </h2>
+     <hr>
+     <h3> Ito et al., (2017), Geophys. Res. Lett. </h3>
+     <h4> Global integrals </h4>
+     Globally integrated upper ocean (>1,000m) dissolved oxygen and heat content
+     <a href="Itoetal_GRL_2017/Itoetal_GRL_Fig1.xlsx">(excel sheet, 44KB)</a>
+     <h4> Gridded dataset </h4>
+     Global 1 degree resolution gridded oxygen data
+     <a href="Itoetal_GRL_2017/g1_o2_wod13.nc">(netCDF)</a>
+     <h5> Reference </h5>
+     <p> Ito T., S. Minobe, M. Long and C. Deutsch, (2017), The upper ocean oxygen trend: 1958-2015, Geophysical Research Letters, <span class="vol">44</span>, doi:<a class="accessionId" title="Link to external resource: 10.1002/2017GL073613" href="http://dx.doi.org/10.1002/2017GL073613" target="_blank" rel="noopener noreferrer">10.1002/2017GL073613</a> (<a href="http://onlinelibrary.wiley.com/doi/10.1002/2017GL073613/abstract">journal</a>, <a href="Itoetal_GRL_2017/preprint.pdf">preprint</a>)</p>
+     <h5> Data description </h5>
+     <p>What is the time period over which the mean and anomalies are computed? Based on the World Ocean Database 2013, monthly O2 climatologies are calculated using all the available data from 1950 to 2015, but the outliers (extreme values defined as 3x the standard deviation) are excluded during the data quality control procedure. The removal of outliers affects the climatology and its statistics, so the climatologies are computed twice. The O2 climatology is therefore defined for the period of 1950-2015. The resulting oxygen anomalies are annually averaged and are objectively mapped onto the global longitude-latitude grid at one degree resolution (i.e. the netCDF file above). </p>
+     <p> How about the global heat content? For the ocean heat content, we used ECMWF Ocean Reanalysis (ORAS4) with the temporal coverage of 1958-2015. Thus we limit our O2-Heat analysis only after 1958. </p>
+     <p> The global oxygen inventory and heat content data (i.e. the spreadsheet above) further includes a constant offset so that anomalies are relative to 1960-1970 decadal average. This is done for the sole purpose of removing the constant background and making a visually intuitive comparison. </p>
+
+     </div>
+</section>
+
+    <hr>
+
+<div class="container">
+    <footer>
+      <p>&copy; Takamitsu Ito</p>
+    </footer>
+</div>
+
+</body>
+</html>

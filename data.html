@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Data</title>
+
+    <!-- Bootstrap core CSS -->
+   <link href="./bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+
+<body>
+<div class="navbar navbar-inverse">
+ <div class="container-fluid">
+  <div class="navbar-header">
+    <a class="navbar-brand" href="http://www.eas.gatech.edu">EAS@GT</a>
+  </div>
+  <div>
+    <ul class="nav navbar-nav">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="group.html">Group</a></li>
+    <li><a href="research.html">Research</a></li>
+    <li><a href="publications.html">Publications</a></li>
+    <li><a href="teaching.html">Teaching</a></li>
+    <li class="active"><a href="data.html">Data</a></li>
+    <!--<li><a href="apply.html">Apply</a></li> -->
+    </ul>
+  </div>
+ </div>
+</div>
+
+<style>
+     img {width: 200px; display: block; max height: 150px}
+</style>
+
+ <section class="container">
+    <!-- Example row of columns -->
+
+     <div class="container col">
+     <h2> Data </h2>
+     <hr>
+     <h3> Sun D., T. Ito, A. Bracco and C. Deutsch, (2022), Global Biogeochem. Cycles </h3>
+     <h4> Reference</h4>
+     <p> Sun D., T. Ito, A. Bracco and C. Deutsch, (2022), Control of the oxygen to ocean heat content ratio during deep convection events</p>
+     <h4> Model output</h4>
+     <p> Link to data repository in 
+		 <a href="https://www.dropbox.com/sh/26cq37ahx5ysfeq/AABbZyxh8OBB5WWs49MNXiY5a?dl=0">Dropbox</a>
+     <hr>
+     <h3> Jersild A. and T. Ito, (2020), Global Biogeochem. Cycles</h3>
+     <h4> Reference</h4>
+     <p> Jersild A. and T. Ito, (2020) Physical and Biological Controls of the Drake Passage pCO2 Variability, Global Biogeochem. Cycles, e2020GB006644. https://doi.org/10.1029/2020GB006644 </p>
+     <h4> Model output</h4>
+     <p> Link to data repository in <a href="https://www.dropbox.com/sh/f1bigcrp3s15aqd/AABXSM_JHyRUtGvsqKDJK5FSa?dl=0">Dropbox</a>
+     <hr>
+     <h3> Ito. et al., (2019), Global Biogeochem. Cycles </h3>
+     <h4> Reference</h4>
+     <p> Ito T., M. C. Long, C. Deutsch, S. Minobe and D. Sun, (2019), Mechanisms of low-frequency oxygen variability in the North Pacific, GBC20840, doi:10.1029/2018GB005987, (<a href="papers/ito18/maintext_R2.pdf">manuscript</a>, <a href="papers/ito18/SI_R2.pdf">SI</a>) </p>
+     <h4> Observations</h4>
+     <p> World Ocean Database 2013 bottle data binned into 5x5 degree bins
+       (<a href="ito18/WOD_O2_5x5.mat">dissolved oxygen</a>),
+       (<a href="ito18/WOD_TEMP_5x5.mat">potential temperature</a>),
+       (<a href="ito18/WOD_SALT_5x5.mat">salinity</a>)</p>
+     <h4> Model output</h4>
+     <p> CESM Ocean-Ice hindcast simulation, re-gridded onto global 1 degree longitude-latitude grid as annual means: netCDF files
+       (<a href="ito18/O2.nc">dissolved oxygen</a>),
+       (<a href="ito18/TEMP.nc">potential temperature</a>),
+       (<a href="ito18/SALT.nc">salinity</a>),
+       (<a href="ito18/IAGE.nc">ideal age</a>),
+       (<a href="ito18/TAUX_JFM.nc">winter zonal wind stress</a>),
+       (<a href="ito18/HMXL_JFM.nc">winter mixed layer depth</a>),
+       (<a href="ito18/O2_CONSUMPTION.nc">biological oxygen consumption rate</a>) </p>
+     <hr>
+     <h3> Takano. et al., (2018), Global Biogeochem. Cycles </h3>
+     <h4> Reference</h4>
+     <p> Takano, Y., Ito, T., & Deutsch, C. (2018). Projected centennial oxygen trends and their attribution to distinct ocean climate forcings. Global Biogeochemical Cycles, 32. https://doi.org/10.1029/2018GB005939</p>
+     <p> MITgcm source code (checkpoint 63s) is availale from <a href="http://mitgcm.org">mitgcm.org</a> and customizations and runtime data files are available from <a href="https://github.com/taka-research/Takano_etal_2018">github</a>. </p>
+     <h4> Model output</h4>
+		 <a href="https://www.dropbox.com/sh/drbhcgy1nk9vxzi/AACCtnCUrwSlvNuiGwpZo8zqa?dl=0">Dropbox</a>
+     <p> Control run (<a href="takano18/global3_v3_CTL_T_1900_2100.nc">Pot Temp</a>,
+       <a href="takano18/global3_v3_CTL_S_1900_2100.nc">Salinity</a>,
+       <a href="takano18/global3_v3_CTL_o2_1900_2100.nc">Oxygen</a>,
+       <a href="takano18/global3_v3_CTL_age_1900_2100.nc">Ideal Age Tracer</a>)</p>
+     <p> ALL run (<a href="takano18/global3_v3_ALL_T_1900_2100.nc">Pot Temp</a>,
+       <a href="takano18/global3_v3_ALL_S_1900_2100.nc">Salinity</a>,
+       <a href="takano18/global3_v3_ALL_o2_1900_2100.nc">Oxygen</a>,
+       <a href="takano18/global3_v3_ALL_age_1900_2100.nc">Ideal Age Tracer</a>)
+       with constant biology (<a href="takano18/global3_v3_ALLBioC_o2_1900_2100.nc">Oxygen</a>)</p>
+     <p> Warm run (<a href="takano18/global3_v3_Warm_T_1900_2100.nc">Pot Temp</a>,
+       <a href="takano18/global3_v3_Warm_S_1900_2100.nc">Salinity</a>,
+       <a href="takano18/global3_v3_Warm_o2_1900_2100.nc">Oxygen</a>,
+       <a href="takano18/global3_v3_Warm_age_1900_2100.nc">Ideal Age Tracer</a>)
+       with constant biology (<a href="takano18/global3_v3_WarmBioC_o2_1900_2100.nc">Oxygen</a>)</p>
+     <p> EmP run (<a href="takano18/global3_v3_EmP_T_1900_2100.nc">Pot Temp</a>,
+         <a href="takano18/global3_v3_EmP_S_1900_2100.nc">Salinity</a>,
+         <a href="takano18/global3_v3_EmP_o2_1900_2100.nc">Oxygen</a>,
+         <a href="takano18/global3_v3_EmP_age_1900_2100.nc">Ideal Age Tracer</a>)
+         with constant biology (<a href="takano18/global3_v3_EmPBioC_o2_1900_2100.nc">Oxygen</a>)</p>
+     <p> SAM run (<a href="takano18/global3_v3_SAM_T_1900_2100.nc">Pot Temp</a>,
+        <a href="takano18/global3_v3_SAM_S_1900_2100.nc">Salinity</a>,
+        <a href="takano18/global3_v3_SAM_o2_1900_2100.nc">Oxygen</a>,
+        <a href="takano18/global3_v3_SAM_age_1900_2100.nc">Ideal Age Tracer</a>)
+        with constant biology (<a href="takano18/global3_v3_SAMBioC_o2_1900_2100.nc">Oxygen</a>)</p>
+     <p> WEq run (<a href="takano18/global3_v3_WEq_T_1900_2100.nc">Pot Temp</a>,
+           <a href="takano18/global3_v3_WEq_S_1900_2100.nc">Salinity</a>,
+           <a href="takano18/global3_v3_WEq_o2_1900_2100.nc">Oxygen</a>,
+           <a href="takano18/global3_v3_WEq_age_1900_2100.nc">Ideal Age Tracer</a>)
+           with constant biology (<a href="takano18/global3_v3_WEqBioC_o2_1900_2100.nc">Oxygen</a>)</p>
+     <hr>
+     <h3> Pham and Ito, (2018), Global Biogeochem. Cycles </h3>
+     <h4> Reference paper</h4>
+     <p> Pham, A. L. D., and Ito, T. (2018). Formation and maintenance of the GEOTRACES subsurface‐dissolved iron maxima in an ocean biogeochemistry model. Global Biogeochemical Cycles, 32, 932–953. https://doi.org/10.1029/2017GB005852
+     <h4> Source code </h4>
+     <p> MITgcm source code (checkpoint 61d) is availale from <a href="http://mitgcm.org">mitgcm.org</a></p>
+     <p> Modification files (<a href="pham18/code_mods.tar.gz">tar.gz file</a>)</p>
+     <h4> Input files </h4>
+     <p> Offline flow field set (<a href="pham18/ffields_gclim.tar.gz">tar.gz file, 158MB</a>)</p>
+     <p> Topography and boundary conditions (<a href="pham18/bcs.tar.gz">tar.gz file, 24MB</a>)</p>
+     <p> Other input files (<a href="pham18/input.tar.gz">tar.gz file</a>)</p>
+     <p> Restart files (<a href="pham18/rest.tar.gz">tar.gz file, 60MB</a>)</p>
+     <hr>
+     <h3> Ito et al., (2017), Geophys. Res. Lett. </h3>
+     <h4> Global integrals </h4>
+     Globally integrated upper ocean (>1,000m) dissolved oxygen and heat content
+     <a href="Itoetal_GRL_2017/Itoetal_GRL_Fig1.xlsx">(excel sheet, 44KB)</a>
+     <h4> Gridded dataset </h4>
+     Objectively mapped global oxygen data <a href="Itoetal_GRL_2017/g1_o2_wod13.mat">(MATLAB, 334MB)</a> and <a href="Itoetal_GRL_2017/o2_aan_mcl1950-2016_0147_QC3.nc">(netCDF, 778MB)</a>
+     <h4> Reference </h4>
+     <p> Please cite the paper below. </p>
+     <p> Ito T., S. Minobe, M. Long and C. Deutsch, (2017), The upper ocean oxygen trend: 1958-2015, Geophysical Research Letters, <span class="vol">44</span>, doi:<a class="accessionId" title="Link to external resource: 10.1002/2017GL073613" href="http://dx.doi.org/10.1002/2017GL073613" target="_blank" rel="noopener noreferrer">10.1002/2017GL073613</a> (<a href="http://onlinelibrary.wiley.com/doi/10.1002/2017GL073613/abstract">journal</a>, <a href="Itoetal_GRL_2017/preprint.pdf">preprint</a>)</p>
+     <h4> Data description </h4>
+     <p> Please read the paper for detailed, technical description. Only a brief explanation of the data is provided here.  </p>
+     <p> What is the time period over which the mean and anomalies are computed? Based on the World Ocean Database 2013, monthly O2 climatologies are calculated using all the available data from 1950 to 2015, but the outliers (extreme values defined as 3x the standard deviation) are excluded during the data quality control procedure. The removal of outliers affects the climatology and its statistics, so the climatologies are computed twice. The O2 climatology is therefore defined for the period of 1950-2015. The resulting oxygen anomalies are annually averaged and are objectively mapped onto the global longitude-latitude grid at one degree resolution. Finally, the land-sea mask from the World Ocean Atlas 2013 is applied and the data is saved as a MATLAB structure array (i.e. the MATLAB file above). </p>
+     <p> While the calculation is performed from 1950 to 2015, the sampling density is relatively poor before 1960 and after 2010 (it takes some time for new data to be included). Use caution when using early and recent time periods. </p>
+     <p> How about the global heat content? For the ocean heat content, we used ECMWF Ocean Reanalysis (ORAS4) with the temporal coverage of 1958-2015. Thus we limit our O2-Heat analysis only after 1958. Gridded dataset is available from ECMWF. </p>
+     <p> The global oxygen inventory and heat content data (i.e. the spreadsheet above) further includes a constant offset so that anomalies are relative to 1960-1970 decadal average. This is done for the sole purpose of removing the constant background and making a visually intuitive comparison. </p>
+     <p> This data is open for all. While it is not necessary, you can email me at taka.ito (at) eas.gatech.edu if you are using this data and are interested in future updates or bug fixes. </p>
+     </div>
+</section>
+
+    <hr>
+
+<div class="container">
+    <footer>
+      <p>&copy; Takamitsu Ito</p>
+    </footer>
+</div>
+<!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+var sc_project=11597667;
+var sc_invisible=1;
+var sc_security="63b4f66f";
+var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "http://www.");
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="site stats"
+href="http://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="//c.statcounter.com/11597667/0/63b4f66f/1/" alt="site
+stats"></a></div></noscript>
+<!-- End of StatCounter Code for Default Guide -->
+
+</body>
+</html>

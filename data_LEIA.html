@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Data (LEIA)</title>
+
+    <!-- Bootstrap core CSS -->
+   <link href="./bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+
+<body>
+<div class="navbar navbar-inverse">
+ <div class="container-fluid">
+  <div class="navbar-header">
+    <a class="navbar-brand" href="http://www.eas.gatech.edu">EAS@GT</a>
+  </div>
+  <div>
+    <ul class="nav navbar-nav">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="group.html">Group</a></li>
+    <li><a href="research.html">Research</a></li>
+    <li><a href="publications.html">Publications</a></li>
+    <li><a href="teaching.html">Teaching</a></li>
+    <li><a href="data.html">Data</a></li>
+    <!--<li><a href="apply.html">Apply</a></li> -->
+    </ul>
+  </div>
+ </div>
+</div>
+
+<style>
+     img {width: 200px; display: block; max height: 150px}
+</style>
+
+ <section class="container">
+    <!-- Example row of columns -->
+
+     <div class="container col">
+     <h2> Large Ensemble with Increased Accesibility</h2>
+     <hr>
+     <h3> CESM Large Ensemble </h3>
+     <h4> Reference</h4>
+     <p> CESM-LENS project description (NCAR website including the link to Kay et al., 2015), <a href="http://www.cesm.ucar.edu/projects/community-projects/LENS/">link</a> </p>
+     <p> This project: (<a href="http://www.cesm.ucar.edu/projects/community-projects/LENS/projects/oxygen-dynamics.html">Website</a>) </p>
+     <h4> Updates</h4>
+     <p> 2019-01-02: 1000-year piControl: The ensemble member #1 is initialized with the 1 Jan, Year 402 of this piControl run (covers from Year 400 to 1399).
+     <p> 2018-10-12: Current speed is added as additional 3D variables.
+     <p> 2018-09-26: The original version contained an error. The first z-level should be 5m depth but it was 50m due to a coding mistake.
+     <h4> Description</h4>
+     <p> This is an attempt to compress the data volume of earth system model output in order to increase accessibility. The original model output for ocean variables is reduced to annual and global 2x2 degree resolution with 33 vertical z-levels.  Historic and RCP8.5 scenario segments are combined to a single time series consisting 1920 to 2100.  The piContorl fields are extracted from Year 400 (equivalent of 1848) to 1399 at the same resolution. The ensemble member #1 is initialized with the Year 402 of the piControl (i.e. Jan 1st, 1850). Thus Year 472 is the equivalent of 1920 (which is the first year of the ensemble runs). This can be used to correct for the model drifts. 
+     <p> Disclaimer. This is a research product that is not an official part of the CESM-LENS project. If you find somehting wrong, please send information to taka.ito (at) eas.gatech.edu
+     <p> The files are named as: ENS_MODEL_RESOLUTION_FORCING_YEAR1_YEAR2.nc. Each file contains 4D (lon,lat,dep,time) fields of potential temperature, salinity, potential density, oxygen, phosphate, dic, alk, ideal age, OUR, and 3D (lon,lat,time) fields of air-sea CO2 flux, air-sea O2 flux, air-sea heat flux, air-sea freshwater flux, fractional ice cover, and maximum mixed layer depth (annual max).
+     <p> ENS: ensemble member number
+     <p> MODEL: model name
+     <p> RESOLUTION: 2x2 (horizontal) L33 (vertical 33 levels) ym (yearly mean)
+     <p> FORCING: hcp85 (historic+rcp85)
+     <h4> Download </h4>
+     <p> Dropbox link <a href="https://www.dropbox.com/sh/tpn1g8r1xsn8c0p/AADnHzAtF5gNN1zOP19cI1FWa?dl=0">HERE!</a>
+	 <p> Official version : <a href="https://doi.org/10.5065/Y5K4-6D48"> Ito, T. (2019), CESM Large Ensemble with Increased Access (LEIA) for Ocean Biogeochemistry, https://doi.org/10.5065/Y5K4-6D48 </a>
+     </div>
+</section>
+
+    <hr>
+
+<div class="container">
+    <footer>
+      <p>&copy; Takamitsu Ito</p>
+    </footer>
+</div>
+<!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+var sc_project=11597667;
+var sc_invisible=1;
+var sc_security="63b4f66f";
+var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "http://www.");
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="site stats"
+href="http://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="//c.statcounter.com/11597667/0/63b4f66f/1/" alt="site
+stats"></a></div></noscript>
+<!-- End of StatCounter Code for Default Guide -->
+
+</body>
+</html>
